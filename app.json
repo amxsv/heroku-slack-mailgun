@@ -1,7 +1,7 @@
 {
   "name": "Mailgun Slack webhook",
   "description": "Simple mailgun slack webhook proxy",
-  "repository": "https://github.com/Label305/heroku-slack-mailgun",
+  "repository": "https://github.com/amxsv/heroku-slack-mailgun",
   "keywords": ["node", "express", "static", "slack", "mailgun"],
    "env": {
     "MAILGUNAPIKEY": {
@@ -10,6 +10,10 @@
     },
     "SLACKWEBHOOK": {
       "description": "Slack Incomming Webhook URL",
+      "required": "true"
+    },
+    "SLACKCHANNEL": {
+      "description": "Slack Channel name",
       "required": "true"
     }
   }
